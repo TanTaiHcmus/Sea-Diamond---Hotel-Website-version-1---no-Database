@@ -1,0 +1,131 @@
+/* login form */
+
+.l-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    z-index: 16;
+    padding: 20px;
+}
+
+.l-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.l-overlay .login-form {
+    height: 300px;
+    width: 300px;
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 17;
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-overlay .login-form .login-form-header {
+    height: 20%;
+    width: 100%;
+    margin: 0;
+}
+
+.l-overlay .login-form .login-form-header h1 {
+    font-size: 45px;
+    font-family: 'Great Vibes', cursive;
+    color: #12263A;
+}
+
+.l-overlay .login-form form {
+    width: 100%;
+}
+
+.l-overlay .login-form form input[type="text"] {
+    font-size: 16px;
+    outline-style: none;
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid #12263A;
+    color: #12263A;
+}
+
+.l-overlay .login-form form input[type="text"]::placeholder {
+    color: rgba(18, 38, 58, 0.692);
+    font-style: italic;
+}
+
+.l-overlay .login-form form input[type="password"] {
+    font-size: 16px;
+    outline-style: none;
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid #12263A;
+    color: #12263A;
+}
+
+.l-overlay .login-form form input[type="password"]::placeholder {
+    color: rgba(18, 38, 58, 0.692);
+    font-style: italic;
+}
+
+.l-overlay .login-form form input[type="submit"] {
+    border: 1px solid #12263A;;
+    background-color: white;
+    color: #12263A;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.l-overlay .login-form form input[type="submit"]:hover {
+    background-color: rgb(6, 19, 32);
+    color: white;
+}
+
+.l-overlay .login-form form .form-btn {
+    width: 90%;
+}
+
+.l-overlay .login-form form .form-btn a {
+    font-size: 16px;
+}   
+
+.l-overlay .login-form form .form-btn a:hover {
+    font-style: italic;
+    color: rgb(199, 22, 31);
+}
+
+.l-overlay .login-form form .register-form {
+    font-size: 13px;
+    width: 90%;
+}
+
+.l-overlay .login-form form .register-form a {
+    text-decoration: underline;
+}
+
+.l-overlay .login-form form .register-form a:hover {
+    font-style: italic;
+    color: #12263A;
+}
+
+#hidden-div {
+    cursor: default;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 16;
+}

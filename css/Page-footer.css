@@ -1,0 +1,89 @@
+/* footer */
+
+footer {
+    background-color: #12263A;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 100;
+}
+
+footer h5 {
+    font-size: 25px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer .ft-container {
+    height: 100%;
+    width: 100%;
+}
+
+footer .ft-container .ft-item {
+    margin-top: 0;
+}
+
+footer .ft-container .ft-item .if-content a {
+    display: block;
+    text-align: center;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1198px) {
+    header .hotel-name {
+        font-size: 50px;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 988px) {
+    header .hotel-name {
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    header {
+        height: 200px;
+    }
+    header .hotel-name {
+        font-size: 40px;
+    }
+
+    header .login .log-btn {
+        width: 90px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    header {
+        height: 200px;
+    }
+    header .hotel-name {
+        font-size: 25px;
+    }
+    header .login .log-btn {
+        width: 90px;
+        font-size: 12px;
+    }
+    header .logo img {
+        width: 90px;
+        height: 90px;
+    }
+}

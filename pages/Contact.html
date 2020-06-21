@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sea Diamond | Contact</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- css style-->
+    <link rel="stylesheet" type="text/css" href="../css/Page-header.css">
+    <link rel="stylesheet" type="text/css" href="../css/Page-footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/Contact.css">
+    <link rel="stylesheet" type="text/css" href="../css/Login-form.css">
+    <link rel="stylesheet" type="text/css" href="../css/Register-form.css">
+    <link rel="stylesheet" type="text/css" href="../css/Scrollbar.css">
+
+</head>
+
+<body>
+     <!-- login form -->
+     <div id="login-form" class="l-overlay container-fluid no-gutters p-5">
+        <a href="#" id="hidden-div">
+        </a>
+        <div id="l-form" class="login-form p-3 no-gutters">
+            <div class="login-form-header row justify-content-center align-items-center">
+                <h1>Welcome</h1>
+            </div>
+            <form id="log" class="d-flex flex-column justify-content-center align-items-center pt-3" action="">
+                <input id="log-username" type="text" placeholder="Username" class="mt-2">
+                <input id="log-password" type="password" placeholder="Password" class="mt-2">
+                <label id="label-notify" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Username or Password incorrect  
+                </label>
+                <div class="register-form row justify-content-end mt-2">
+                    <span>Don't have an account? <a href="#register-form">Create</a></span>
+                </div>
+
+                <div class="form-btn d-flex flex-column justify-content-center align-items-center mt-2">
+                    <input type="submit" value="Sign In">
+                    <a id='log-cancel' class="mt-1" href="#">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- register form -->
+    <div id="register-form" class="r-overlay container-fluid no-gutters p-5">
+        <a href="#" id="hidden-div">
+
+        </a>
+        <!-- <div class="login-form col-md-4 p-3 row"> -->
+        <div id="r-form" class="register-form p-3 no-gutters">
+            <div class="register-form-header row justify-content-center align-items-center">
+                <h1>Welcome</h1>
+            </div>
+            <form id='reg' class="d-flex flex-column justify-content-center align-items-center pt-3" action="">
+                <input id='reg-email' type="text" placeholder="Email" class="mt-2"/>
+                <label id="label-email" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Email existed  
+                </label>
+                <label id="label-email-wrong" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Invalid email address 
+                </label>
+                <input id='reg-username' type="text" placeholder="Username" class="mt-2"/>
+                <label id="label-username" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Username existed  
+                </label>
+                <input id='reg-password' type="password" placeholder="Password" class="mt-2"/>
+                <label id="valid-pwd-form"style="font-size: 10px; color: red; display: none; margin: 0;">
+                  At least one number, one lowercase and one uppercase letter
+                  <br />
+                  At least six characters that are letters, numbers or the underscore</label>
+               
+                  <input id='reg-confirm' type="password" placeholder="Confirm password" class="mt-2"/>
+
+                <label id="not-match-form" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Your password and confirmation password do not match
+                </label>
+                <div class="form-btn d-flex flex-column justify-content-center align-items-center mt-4">
+                    <input type="submit" value="Sign Up"/>
+                    <a id="bk-to-lg" class="mt-3" href="#login-form">Back to login</a>
+                    <!-- <a class="mt-1" href="#login-form">Back to login</a> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- wrap all content in the page consist of header main content, footer-->
+    <div class="container mb-4">
+        <!-- content goes here -->
+        <!-- this part consists of logo, hotel's name login button, register button, navigation bar -->
+        <header class="row flex-nowrap no-gutters justify-content-between align-items-center" id="header">
+            <div class="logo col-sm-3">
+                <a href="./Home-page.html"><img class="img-fluid" src="../images/logos/logo_v1.png" alt="logo"></a>
+            </div>
+
+            <div class="hotel-name col-sm-6 text-center">
+                Sea Diamond hotel
+            </div>
+
+            <div id='login-btn' class="login text-right col-sm-3">
+                <a class="log-btn" href="#login-form">Sign In</a>
+            </div>
+        </header>
+
+        <!-- navigation bar -->
+        <div class="nav-bar" id="content">
+            <ul class="nav justify-content-center no-gutters pt-2 pb-2">
+                <li class="nav-item col-md-2 i-begin">
+                    <a class="nav-link" href="../pages/Home-page.html">Home</a>
+                </li>
+                <li class="nav-item col-md-2 i-normal">
+                    <a class="nav-link" href="../pages/ListRooms-page.html">Our rooms</a>
+                </li>
+                <li class="nav-item col-md-2 i-normal">
+                    <a class="nav-link active" href="#">Contact</a>
+                </li>
+                <li class="nav-item col-md-2 i-normal">
+                    <a class="nav-link" href="../pages/About-us.html">About us</a>
+                </li>
+                <!-- <li class="nav-item col-md-2 i-end">
+                    <a class="nav-link" href="../pages/ListRooms-page.html">Book now</a>
+                </li> -->
+            </ul>
+        </div>    
+    </div>
+
+    <!-- content goes here -->
+    <div class="main-content container mb-5">
+        <div class="cover-image row justify-content-center align-items-center mb-5 no-gutters">
+            <p>CONTACT</p>
+        </div>
+
+        <div class="contact row justify-content-center no-gutters">
+            <div class="contact-form col-md-6 pl-3 pr-3 mb-5">
+                <h5 class="mb-3">Write Us</h5>
+                <form class="d-flex flex-column mt-0" action="">
+                    <input id="form-name" type="text" placeholder="Name">
+                    <input id="form-email" type="text" placeholder="Email">
+                    <input id="form-message" type="text" placeholder="Message">
+                    <input class="mt-3" type="submit" value="SEND">
+                </form>
+            </div>
+
+            <div class="contact-questions col-md-6 pl-3 pr-3">
+                <h5 class="mb-3">Frequently Asked Questions</h5>
+                <p class="mt-0">To help you clear about our organization, we have prepared a bound of mostly asked questions.</p>
+
+                <ul class="list-group">
+                    <li class="list-group-item">How to pay an online room?</li>
+                    <li class="list-group-item">How to become VIP customer?</li>
+                    <li class="list-group-item">Which currencies are accepted?</li>
+                    <li class="list-group-item">What is the difference between normal room and VIP room?</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container map-container mb-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.1707728988454!2d109.19530078358328!3d12.23671372284738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677b2275de11%3A0x637dae03bebff463!2zNjAgVHLhuqduIFBow7osIEzhu5ljIFRo4buNLCBUaMOgbmggcGjhu5EgTmhhIFRyYW5nLCBLaMOhbmggSMOyYSA2NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1591009205879!5m2!1svi!2s"
+            width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- this part consists of information of service provider,
+             social media links -->
+    <!-- footer -->
+    <footer id="p-footer" class="page-footer container-fluid d-flex flex-row justify-content-center align-items-center pt-4">
+        <div class="ft-container container row justify-content-center no-gutters">
+            <!-- Grid column -->
+            <div class="ft-item col-md-4 mb-4">
+                <h5>Main contact</h5>
+                <div class="if-content">
+                    <p>District 1, Ho Chi Minh city, VN</p>
+                    <p>info@seadiamond.com</p>
+                    <p>+84 1535 43526</p>
+                </div>
+
+            </div>
+
+            <!-- Grid column -->
+            <div class="ft-item col-md-4 mb-4">
+                <h5>Site links</h5>
+                <div class="if-content">
+                    <a href="#!">About us</a>
+                    <a href="#!">Our rooms</a>
+                </div>
+            </div>
+
+            <!-- Grid column -->
+            <div class="ft-item col-md-4 mb-4">
+                <h5>Social</h5>
+                <div class="if-content d-flex flex-column justify-content-center">
+                    <div class="icons d-flex flex-row justify-content-center">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="ml-4 mr-4 fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="../js/login-register/OnLoad.js"></script>
+    <script src="../js/login-register/OnRegister.js"></script>
+    <script src="../js/login-register/OnLogin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+body {
+    color: #12263A;
+}
+
+.cover-image {
+    height: 400px;
+    background-image: url(../images/listrooms-images/roomdetail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 330px 30px 10px 20px;
+    margin: 0;
+}
+
+#menu .nav-item {
+    margin: auto 10px;
+}
+
+#menu #list-tab-room-detail {
+    margin-left: 20px;
+}
+
+#menu #list-tab-room-detail .dropdown-toggle {
+    font-size: 20px;
+}
+
+#menu .nav-item .nav-link {
+    color: aliceblue;
+    font-size: 16px;
+    padding: 2px 5px;
+}
+
+#menu .nav-link:hover {
+    color: #12263A;
+}
+
+#menu .nav-item .active {
+    border-bottom: 1.5px solid #12263A;
+}
+
+#menu .nav-item .dropdown-menu .dropdown-item {
+    font-size: 16px;
+    background-color: #12263A;
+    color: aliceblue;
+}
+
+#menu .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: gray;
+    color: #12263A;
+}
+
+.price {
+    font-size: 18px;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.title-page {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.title-room {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.icon-star {
+    color: #ffce00;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#room-images .carousel-inner img {
+    width: 100%;
+}
+
+#room-info {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.image-info {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+#guests-image {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/listrooms-images/account.png);
+}
+
+#area-image {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/listrooms-images/dientich.png);
+}
+
+#price-image {
+    height: 50px;
+    width: 70px;
+    background-image: url(../images/listrooms-images/giuong.png);
+}
+
+#info-detail {
+    margin: 20px 0px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#head-info {
+    font-size: 18px;
+}
+
+#body-info {
+    font-size: 14px;
+}
+
+#left-frame {
+    margin-bottom: 20px;
+}
+
+#room-services {
+    font-size: 14px;
+}
+
+#room-services div img {
+    width: 25%;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.booking-frame {
+    width: 100%;
+    height: 16em;
+    background-color: #12263A;
+    color: aliceblue;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.booking-item {
+    padding: 10px;
+    margin: 0;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+#check-in-text,
+#check-out-text,
+#guests-text,
+#nights-text {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    font-size: 25px;
+}
+
+.number {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    font-size: 40px;
+}
+
+.month,
+.fa-caret-up {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding-top: 10px;
+}
+
+.month {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa-caret-down {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding-bottom: 5px;
+}
+
+#btn-book-now {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    grid-column: 1/ 3;
+}
+
+.other-room-frame {
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+}
+
+.other-room-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+#other-room1 {
+    background-image: url(../images/listrooms-images/room6.jpg);
+}
+
+#other-room2 {
+    background-image: url(../images/listrooms-images/room4.jpg);
+}
+
+#other-room3 {
+    background-image: url(../images/listrooms-images/room2.jpg);
+}
+
+.btn-book {
+    width: 60%;
+    padding: 2px;
+    font-size: 11px;
+    background-color: #12263A;
+    color: aliceblue;
+    text-align: center;
+}
+
+.button,
+.other-room {
+    cursor: pointer;
+}
+
+.other-room:hover {
+    color: green;
+}
+
+#room-detail-1 {
+    display: none;
+}
+
+#review-frame {
+    padding: 20px 70px 20px 50px;
+    border: 1px solid gray;
+}
+
+#sum-stars {
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+#stars {
+    margin-left: 32px;
+}
+
+#txt-count-review {
+    margin-left: 32px;
+}
+
+#average-right {
+    margin-top: -15px;
+    padding: 15px 0px;
+}
+
+.stars-percent {
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.number-star {
+    padding: 0;
+    text-align: right;
+    margin-right: 3px;
+}
+
+.percent {
+    padding: 0;
+    text-align: center;
+}
+
+.progress {
+    height: 12px;
+    margin: auto;
+    padding: 0;
+}
+
+.progress-bar {
+    background-color: #12263A;
+}
+
+.txt-review-blue {
+    font-size: 14px;
+}
+
+.media-body {
+    margin-top: 10px;
+}
+
+.list-review {
+    margin-top: -10px;
+}
+
+.media {
+    padding-bottom: 0px !important;
+    padding-top: 15px !important;
+}
+
+.media-body span {
+    font-size: 14px;
+    color: #0E80F1;
+}
+
+.comment {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+.comment-reply {
+    margin-top: 5px;
+}
+
+.comment-reply input {
+    font-size: 14px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.media-body input {
+    border: none;
+    color: #12263A;
+}
+
+.media-body input:focus {
+    outline: none;
+}
+
+#review-yourself .list-review {
+    margin-top: 8px;
+}
+
+#table-month {
+    background-color: white;
+    border: 1px solid gray;
+    color: #12263A;
+    position: relative;
+    top: 500px;
+    width: 300px;
+    z-index: 20;
+    text-align: center;
+}
+
+#table-month div:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}

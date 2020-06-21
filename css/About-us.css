@@ -1,0 +1,66 @@
+/* #12263A */
+
+/* content */
+.main-content {
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.main-content .cover-image {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/about-images/about-main.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-content .cover-image p {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.918);
+
+}
+
+
+.main-content .image-info  {
+    padding: 0px;
+    color: #12263A ;
+}
+
+.main-content .image-info .float-container .item .item-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #12263A ;
+}
+
+.main-content .image-info .float-container .item .item-info {
+    font-size: 14px;
+}
+
+.main-content .image-info .float-container .item .item-dangtantai {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/about-images/dangtantai.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.main-content .image-info .float-container .item .item-hoangduccong {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/about-images/hoangduccong.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.main-content .image-info .float-container .item .item-truongkhactrieu {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/about-images/truongkhactrieu.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}

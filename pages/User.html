@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Sea Diamond | User</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <!-- css style -->
+  <link rel="stylesheet" type="text/css" href="../css/user.css" />
+  <link rel="stylesheet" type="text/css" href="../css/Page-header.css" />
+  <link rel="stylesheet" type="text/css" href="../css/Page-footer.css" />
+  <link rel="stylesheet" type="text/css" href="../css/Login-form.css" />
+  <link rel="stylesheet" type="text/css" href="../css/Register-form.css" />
+  <link rel="stylesheet" type="text/css" href="../css/Scrollbar.css" />
+</head>
+
+<body>
+  <!-- login form -->
+  <div id="login-form" class="l-overlay container-fluid no-gutters p-5">
+    <a href="#" id="hidden-div"> </a>
+    <div id="l-form" class="login-form p-3 no-gutters">
+      <div class="login-form-header row justify-content-center align-items-center">
+        <h1>Welcome</h1>
+      </div>
+      <form id="log" class="d-flex flex-column justify-content-center align-items-center pt-3" action="">
+        <input id="log-username" type="text" placeholder="Username" class="mt-2" />
+        <input id="log-password" type="password" placeholder="Password" class="mt-2" />
+        <label id="label-notify" style="font-size: 10px; color: red; display: none; margin: 0;">
+          Username or Password incorrect
+        </label>
+        <div class="register-form row justify-content-end mt-2">
+          <span>Don't have an account? <a href="#register-form">Create</a></span>
+        </div>
+
+        <div class="form-btn d-flex flex-column justify-content-center align-items-center mt-2">
+          <input type="submit" value="Sign In" />
+          <a id="log-cancel" class="mt-1" href="#">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- register form -->
+  <div id="register-form" class="r-overlay container-fluid no-gutters p-5">
+    <a href="#" id="hidden-div"> </a>
+    <!-- <div class="login-form col-md-4 p-3 row"> -->
+    <div id="r-form" class="register-form p-3 no-gutters">
+      <div class="register-form-header row justify-content-center align-items-center">
+        <h1>Welcome</h1>
+      </div>
+      <form id="reg" class="d-flex flex-column justify-content-center align-items-center pt-3" action="">
+        <input id="reg-email" type="text" placeholder="Email" class="mt-2" />
+        <label id="label-email" style="font-size: 10px; color: red; display: none; margin: 0;">
+          Email existed
+        </label>
+        <label id="label-email-wrong" style="font-size: 10px; color: red; display: none; margin: 0;">
+          Invalid email address
+        </label>
+        <input id="reg-username" type="text" placeholder="Username" class="mt-2" />
+        <label id="label-username" style="font-size: 10px; color: red; display: none; margin: 0;">
+          Username existed
+        </label>
+        <input id="reg-password" type="password" placeholder="Password" class="mt-2" />
+        <label id="valid-pwd-form" style="font-size: 10px; color: red; display: none; margin: 0;">
+          At least one number, one lowercase and one uppercase letter
+          <br />
+          At least six characters that are letters, numbers or the
+          underscore</label>
+
+        <input id="reg-confirm" type="password" placeholder="Confirm password" class="mt-2" />
+
+        <label id="not-match-form" style="font-size: 10px; color: red; display: none; margin: 0;">
+          Your password and confirmation password do not match
+        </label>
+        <div class="form-btn d-flex flex-column justify-content-center align-items-center mt-4">
+          <input type="submit" value="Sign Up" />
+          <a id="bk-to-lg" class="mt-3" href="#login-form">Back to login</a>
+          <!-- <a class="mt-1" href="#login-form">Back to login</a> -->
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- wrap all content in the page consist of header main content, footer-->
+  <div class="container mb-4">
+    <!-- content goes here -->
+    <!-- this part consists of logo, hotel's name login button, register button, navigation bar -->
+    <header class="row flex-nowrap no-gutters justify-content-between align-items-center" id="header">
+      <div class="logo col-sm-3">
+        <a href=""><img class="img-fluid" src="../images/logos/logo_v1.png" alt="logo" /></a>
+      </div>
+
+      <div class="hotel-name col-sm-6 text-center">
+        Sea Diamond hotel
+      </div>
+
+      <div id="login-btn" class="login text-right col-sm-3">
+        <a class="log-btn" href="#login-form">Sign In</a>
+      </div>
+    </header>
+
+    <!-- navigation bar -->
+    <div class="nav-bar mb-4" id="content">
+      <ul class="nav justify-content-center no-gutters pt-2 pb-2">
+        <li class="nav-item col-md-2 i-begin">
+          <a class="nav-link" href="../pages/Home-page.html">Home</a>
+        </li>
+        <li class="nav-item col-md-2 i-normal">
+          <a class="nav-link" href="../pages/ListRooms-page.html">Our rooms</a>
+        </li>
+        <li class="nav-item col-md-2 i-normal">
+          <a class="nav-link" href="../pages/Contact.html">Contact</a>
+        </li>
+        <li class="nav-item col-md-2 i-normal">
+          <a class="nav-link" href="../pages/About-us.html">About us</a>
+        </li>
+        <!-- <li class="nav-item col-md-2 i-end">
+                    <a class="nav-link" href="../pages/ListRooms-page.html">Book now</a>
+                </li> -->
+      </ul>
+    </div>
+  </div>
+  <!-- <div class="container">
+            <div class="banner">
+                <div class="space-top"></div>
+                <div class="text-center text-banner">
+                    <h1 style="color: #fff;">USER</h1>
+                </div>
+                <div class="space-bottom"></div>
+
+            </div>
+        </div> -->
+
+  <div class="container mb-4">
+    <!-- <div class="main-content d-flex flex-column align-items-center no-gutters"> -->
+    <div class="cover-image row justify-content-center align-items-center mb-5 no-gutters">
+      <p>USER INFORMATION</p>
+    </div>
+    <!-- </div>  -->
+  </div>
+
+  <div class="container main-contain main-content mb-5">
+    <div class="row">
+      <div class="left-side col-lg-4">
+        <div class="row container">
+          <!-- <img class="profile_img mx-auto d-inline-block" src="../images/logos/logo_v1.png" alt="Avatar" class="avatar"> -->
+          <!-- <button type="button" class="btn btn-primary btn-sm ">Small button</button> -->
+          <div class="container avatar-kh align-items-center">
+            <img class="profile_img d-inline-block" src="../images/logos/logo_v1.png" alt="" />
+            <!-- <button class="btn-change">Thay đổi</button> -->
+            <button type="button" class="btn btn-light btn-change">
+              Change photo
+            </button>
+            <input type="file" id="myImage" accept="image/*" style="display: none;" />
+          </div>
+        </div>
+        <div class="row infor-tab on-showing">
+          <img class="d-inline" id="img-inf" src="../images/user-images/inf-icon.png" alt="" />
+          <div class="text-tab">Personal information</div>
+        </div>
+        <div class="row pwd-tab">
+          <img class="d-inline" id="img-pwd" src="../images/user-images/pwd-icon.png" alt="" />
+          <div class="text-tab">Change password</div>
+        </div>
+        <div class="row history-tab">
+          <img class="d-inline" id="img-pwd" src="../images/user-images/pwd-icon.png" alt="" />
+          <div class="text-tab">Your reservations</div>
+        </div>
+      </div>
+
+      <div class="right-side col-lg-8">
+        <div class="on-infor ml-3">
+          <div class="text-center">
+            <h6>Personal information</h6>
+          </div>
+          <div class="form-group p-2">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" />
+            <!-- value="Sea Diamond"> -->
+            <label style="font-size: 12px; color: red; display: none;">Name is require</label>
+          </div>
+          <div class="form-group p-1">
+            <label for="inputEmail">Email</label>
+            <div class="d-flex">
+              <input type="email" class="form-control d-inline" id="inputEmail" disabled />
+              <!-- value="contact@seadiamond.com" > -->
+              <button class="btn-dark btn-act-email" style="font-size: 14px; display: inline;">
+                Activate email
+              </button>
+            </div>
+          </div>
+          <div class="form-row p-1">
+            <div class="form-group col-md-6 p-1">
+              <label for="inputPhone">Phone</label>
+              <input type="text" class="form-control" id="inputPhone" />
+              <!-- value="0965123456"> -->
+            </div>
+            <div class="form-group col-md-3 p-1 my-custom-select">
+              <label for="inputState">Gender</label>
+              <select id="inputState" class="form-control my-custom-select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div style="padding-left: 5px;">Day of birth</div>
+          <div class="form-row">
+            <div class="form-group col-md-4 p-2 my-custom-select">
+              <select id="inputDayDOB" class="form-control my-custom-select">
+              </select>
+            </div>
+            <div class="form-group col-md-4 p-2 my-custom-select">
+              <select id="inputMonthDOB" class="form-control my-custom-select">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 p-2 my-custom-select">
+              <select id="inputYearDOB" class="form-control my-custom-select">
+              </select>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button class="btn-dark btn-update-inf">Update</button>
+          </div>
+        </div>
+        <div class="on-pwd not-show ml-3">
+          <div class="text-center">
+            <h6>Change password</h6>
+          </div>
+          <div class="form-group p-2">
+            <label for="inputOldPwd">Old password</label>
+            <input type="password" class="form-control" id="inputOldPwd" placeholder="Your old password" />
+          </div>
+          <div class="form-group p-2">
+            <label for="inputNewPwd">New password</label>
+            <input type="password" class="form-control" id="inputNewPwd" placeholder="New password" />
+            <label id="valid-pwd" style="font-size: 12px; color: red; display: none;">At least one number, one lowercase
+              and one uppercase letter
+              <br />At least six characters that are letters, numbers or the
+              underscore</label>
+          </div>
+          <div class="form-group p-2">
+            <label for="inputConfirmNew">Confirm new password</label>
+            <input type="password" class="form-control" id="inputConfirmNew" placeholder="Confirm your new password" />
+            <label id="not-match" style="font-size: 12px; color: red; display: none;">Your password and confirmation
+              password do not match</label>
+          </div>
+          <div class="text-center">
+            <button class="btn-dark btn-change-pwd">Change</button>
+          </div>
+        </div>
+        <div class="on-history not-show ml-3">
+          <div class="text-center">
+            <h6>Your Reservations</h6>
+          </div>
+          <ul class="cart_list p-0">
+            <li class="cart_item clearfix p-0">
+              <div class="container no-gutters">
+                <div class="row no-gutters">
+                  <div class="row justify-content-center cart_item_image p-0 pt-2 col-lg-3 pb-2">
+                    <img   src="../images/listrooms-images/room2.jpg" alt="" />
+                  </div>
+                  <div class="cart_item_name cart_info_col mt-1 col-lg-4 ml-0 p-0">
+                    <div class="cart_item_title text-center">LUXURY ROOM</div>
+                    <div class="row cart_item_text m-0">  
+                      <div class="row p-1 ">
+                        <img class="icon-services" src="../images/room-services/icon-wifi.png" alt="" />
+                        <div >Wifi</div>
+                      </div>
+                      <div class="row p-1 ">
+                        <img class="icon-services" src="../images/room-services/icon-balcony.png" alt="" />
+                        <div >Balcony</div>
+                      </div>
+                      <div class="row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-conditioner.png" alt="" />
+                        <div >Conditioner</div>
+                      </div> 
+                      <div class="row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-fridge.png" alt="" />
+                        <div >Fridge</div>
+                      </div>  
+                      <div class="row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-garden.png"" alt="" />
+                        <div >Garden view</div>
+                      </div>  
+                      <div class=" row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-mountain.png" alt="" />
+                        <div >Mountain</div>
+                      </div>  
+                      <div class=" row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-tv.png" alt="" />
+                        <div >Television</div>
+                      </div>  
+                      <div class=" row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-swim.png" alt="" />
+                        <div >Swimming pool</div>
+                      </div>  
+                      
+                    </div>
+                  </div>
+                  <div class="cart_item_quantity cart_info_col text-center col-lg-2 col-6 col-sm-4 mt-1 p-0">
+                    <div class="cart_item_title">Check in</div>
+                    <div class="cart_item_text m-1">September</div>
+                    <div class="cart_item_text m-1"> 6th </div>
+                    <div class="cart_item_text  m-1">2020</div>
+                  </div>
+                  <div class="cart_item_price cart_info_col col-lg-2 col-6 col-sm-4 mt-1 p-0 text-center">
+                    <div class="cart_item_title">Check out</div>
+                    <div class="cart_item_text  m-1">September</div>
+                    <div class="cart_item_text  m-1"> 30th </div>
+                    <div class="cart_item_text  m-1">2020</div>
+                  </div>
+                  <div class="cart_item_total cart_info_col p-0 mt-1 col-sm-4 col-lg-1 text-center">
+                    <div class="cart_item_title ">Total</div>
+                    <div class="cart_item_text">222222$</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr>
+            <li class="cart_item clearfix p-0">
+              <div class="container no-gutters">
+                <div class="row no-gutters">
+                  <div class="row justify-content-center cart_item_image p-0 pt-2 col-lg-3 pb-2">
+                    <img   src="../images/listrooms-images/room2.jpg" alt="" />
+                  </div>
+                  <div class="cart_item_name cart_info_col mt-1 col-lg-4 ml-0 p-0">
+                    <div class="cart_item_title text-center">LUXURY ROOM</div>
+                    <div class="row cart_item_text m-0">  
+                      <div class="row p-1 ">
+                        <img class="icon-services" src="../images/room-services/icon-wifi.png" alt="" />
+                        <div >Wifi</div>
+                      </div>
+                      <div class="row p-1 ">
+                        <img class="icon-services" src="../images/room-services/icon-balcony.png" alt="" />
+                        <div >Balcony</div>
+                      </div>
+                      <div class="row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-conditioner.png" alt="" />
+                        <div >Conditioner</div>
+                      </div> 
+                      <div class="row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-fridge.png" alt="" />
+                        <div >Fridge</div>
+                      </div>  
+                      <div class="row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-garden.png"" alt="" />
+                        <div >Garden view</div>
+                      </div>  
+                      <div class=" row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-mountain.png" alt="" />
+                        <div >Mountain</div>
+                      </div>  
+                      <div class=" row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-tv.png" alt="" />
+                        <div >Television</div>
+                      </div>  
+                      <div class=" row p-1">
+                        <img class="icon-services" src="../images/room-services/icon-swim.png" alt="" />
+                        <div >Swimming pool</div>
+                      </div>  
+                      
+                    </div>
+                  </div>
+                  <div class="cart_item_quantity cart_info_col text-center col-lg-2 col-6 col-sm-4 mt-1 p-0">
+                    <div class="cart_item_title">Check in</div>
+                    <div class="cart_item_text m-1">September</div>
+                    <div class="cart_item_text m-1"> 6th </div>
+                    <div class="cart_item_text  m-1">2020</div>
+                  </div>
+                  <div class="cart_item_price cart_info_col col-lg-2 col-6 col-sm-4 mt-1 p-0 text-center">
+                    <div class="cart_item_title">Check out</div>
+                    <div class="cart_item_text  m-1">September</div>
+                    <div class="cart_item_text  m-1"> 30th </div>
+                    <div class="cart_item_text  m-1">2020</div>
+                  </div>
+                  <div class="cart_item_total cart_info_col p-0 mt-1 col-sm-4 col-lg-1 text-center">
+                    <div class="cart_item_title ">Total</div>
+                    <div class="cart_item_text">222222$</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer container-fluid d-flex flex-row justify-content-center align-items-center pt-4">
+    <div class="ft-container container row justify-content-center no-gutters">
+      <!-- Grid column -->
+      <div class="ft-item col-md-4 mb-4">
+        <h5>Main contact</h5>
+        <div class="if-content">
+          <p>District 1, Ho Chi Minh city, VN</p>
+          <p>info@seadiamond.com</p>
+          <p>+84 1535 43526</p>
+        </div>
+      </div>
+
+      <!-- Grid column -->
+      <div class="ft-item col-md-4 mb-4">
+        <h5>Site links</h5>
+        <div class="if-content">
+          <a href="#!">About us</a>
+          <a href="#!">Our rooms</a>
+        </div>
+      </div>
+
+      <!-- Grid column -->
+      <div class="ft-item col-md-4 mb-4">
+        <h5>Social</h5>
+        <div class="if-content d-flex flex-column justify-content-center">
+          <div class="icons d-flex flex-row justify-content-center">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="ml-4 mr-4 fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal notify update success -->
+  <div class="modal fade" id="notifyUpdate">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Notification</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>Update information success</div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal notify change password success -->
+  <div class="modal fade" id="notifyChangePwd">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Notification</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>Password changed successfully</div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/User.js " type="text/javascript "></script>
+  <script src="../js/login-register/OnLoad.js"></script>
+  <script src="../js/login-register/OnRegister.js"></script>
+  <script src="../js/login-register/OnLogin.js"></script>
+</body>
+
+</html>

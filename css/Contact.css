@@ -1,0 +1,68 @@
+
+.main-content {
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.main-content .cover-image {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/contact-images/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-content .cover-image p {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.918);
+
+}
+
+.main-content .contact h5 {
+    color: #12263A;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.main-content .contact .contact-questions p {
+    color: #12263A;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.main-content .contact .contact-questions ul li {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.main-content .contact .contact-form input[type="text"] {
+    padding: 10px;
+    font-size: 15px;
+    border: 0.5px solid #f3f3f3;
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+    color: #12263A;
+}
+
+.main-content .contact .contact-form input[type="text"]:focus {
+    border: 1px solid #12263A;
+}
+
+.main-content .contact .contact-form input[type="submit"] {
+    background-color: white;
+    border: 1px solid #12263A;
+    color: #12263A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+} 
+
+.main-content .contact .contact-form input[type="submit"]:hover {
+    background-color: #12263A;
+    color: white
+}

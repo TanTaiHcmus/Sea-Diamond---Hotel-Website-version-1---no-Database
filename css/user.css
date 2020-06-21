@@ -1,0 +1,264 @@
+/* #12263A */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+html {
+  font-size: 20px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+body+div {
+  padding: 0px 40px 0px 40px;
+}
+
+/* content */
+
+/* .banner {
+    background-image: url(../images/booking-images/bk-room.png);
+    background-position: center center;
+    background-size: cover;
+}  */
+
+.cover-image {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/user-images/user-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.cover-image p {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.918);
+}
+
+.space-top {
+  height: 110px;
+}
+
+.text-banner {
+  padding: 15px;
+}
+
+.space-bottom {
+  height: 110px;
+  margin: auto;
+}
+
+.main-contain {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* height: 700px; */
+}
+
+.main-content {
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.left-side {
+  border-right: solid 1px;
+  padding-right: 0;
+  /* padding-left: 15px; */
+}
+
+.profile_img {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* position: relative; */
+}
+
+.avatar-kh {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-change {
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  background-color: rgb(243, 240, 252);
+  width: 120px;
+  height: 35px;
+  position: absolute;
+  /* top: 65%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -20px;
+  /* right: 16px; */
+}
+
+.infor-tab,
+.pwd-tab,
+.history-tab {
+  border: solid 1px;
+  border-right-style: none;
+  margin: 3rem 0 5rem 0;
+}
+
+.infor-tab:hover,
+.pwd-tab:hover,
+.history-tab:hover {
+  cursor: pointer;
+}
+
+#img-inf,
+#img-pwd,
+#img-history {
+  width: 30px;
+  height: 30px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.text-tab {
+  padding-left: 50px;
+}
+
+.on-showing {
+  background-color: rgb(224, 207, 207);
+}
+
+.not-show {
+  display: none;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-update-inf,
+.btn-act-email,
+.btn-change-pwd {
+  border-radius: 15px;
+  width: 200px;
+  background-color: #12263a;
+}
+
+.my-custom-select select {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 10px #e8e8e8 inset;
+  /* height: 40px; */
+  /* margin: 0 0 0 25px; */
+  /* padding: 10px; */
+  /* width: 110px; */
+}
+
+
+.cart_list {
+  border: solid 1px #e8e8e8;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cart_item {
+  width: 100%;
+  padding: 15px;
+  /* padding-right: 5px */
+}
+
+.icon-services {
+  width: 15px;
+  height: 15px;
+}
+
+.cart_item_image {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  /* background-image: url(../images/listrooms-images/room6.jpg); */
+  /* background-size: 100% 100%; */
+  /* background-size: cover; */
+}
+
+.cart_item_image img {
+  max-width: 100%;
+}
+
+.cart_item_info {
+  /* width: calc(100% - 133px); */
+  /* float: left; */
+  padding-top: 18px;
+}
+
+.cart_item_name {
+  margin-left: 7.53%;
+}
+
+.cart_item_title {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cart_item_text {
+  font-size: 12px;
+  margin-top: 35px;
+}
+
+.cart_item_text span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 11px;
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  -o-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+.cart_item_price {
+  text-align: right;
+}
+
+.cart_item_total {
+  text-align: right;
+}
+
+/* For responsive */
+
+@media (max-width: 992px) {
+  .left-side {
+    border-style: none;
+  }
+
+  .infor-tab,
+  .pwd-tab,
+  .history-tab {
+    border: solid 1px;
+    margin: 3rem 0 5rem 0;
+  }
+}

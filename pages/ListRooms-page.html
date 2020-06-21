@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sea Diamond | Rooms</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- css style -->
+    <link rel="stylesheet" type="text/css" href="../css/Page-header.css">
+    <link rel="stylesheet" type="text/css" href="../css/Page-footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/ListRooms-page.css">
+    <link rel="stylesheet" type="text/css" href="../css/Login-form.css">
+    <link rel="stylesheet" type="text/css" href="../css/Register-form.css">
+    <link rel="stylesheet" type="text/css" href="../css/Scrollbar.css">
+
+</head>
+
+<body>
+    <!-- login form -->
+    <div id="login-form" class="l-overlay container-fluid no-gutters p-5">
+        <a href="#" id="hidden-div">
+        </a>
+        <div id="l-form" class="login-form p-3 no-gutters">
+            <div class="login-form-header row justify-content-center align-items-center">
+                <h1>Welcome</h1>
+            </div>
+            <form id="log" class="d-flex flex-column justify-content-center align-items-center pt-3" action="">
+                <input id="log-username" type="text" placeholder="Username" class="mt-2">
+                <input id="log-password" type="password" placeholder="Password" class="mt-2">
+                <label id="label-notify" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Username or Password incorrect  
+                </label>
+                <div class="register-form row justify-content-end mt-2">
+                    <span>Don't have an account? <a href="#register-form">Create</a></span>
+                </div>
+
+                <div class="form-btn d-flex flex-column justify-content-center align-items-center mt-2">
+                    <input type="submit" value="Sign In">
+                    <a id='log-cancel' class="mt-1" href="#">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- register form -->
+    <div id="register-form" class="r-overlay container-fluid no-gutters p-5">
+        <a href="#" id="hidden-div">
+
+        </a>
+        <!-- <div class="login-form col-md-4 p-3 row"> -->
+        <div id="r-form" class="register-form p-3 no-gutters">
+            <div class="register-form-header row justify-content-center align-items-center">
+                <h1>Welcome</h1>
+            </div>
+            <form id='reg' class="d-flex flex-column justify-content-center align-items-center pt-3" action="">
+                <input id='reg-email' type="text" placeholder="Email" class="mt-2" />
+                <label id="label-email" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Email existed  
+                </label>
+                <label id="label-email-wrong" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Invalid email address 
+                </label>
+                <input id='reg-username' type="text" placeholder="Username" class="mt-2" />
+                <label id="label-username" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Username existed  
+                </label>
+                <input id='reg-password' type="password" placeholder="Password" class="mt-2" />
+                <label id="valid-pwd-form" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  At least one number, one lowercase and one uppercase letter
+                  <br />
+                  At least six characters that are letters, numbers or the underscore</label>
+
+                <input id='reg-confirm' type="password" placeholder="Confirm password" class="mt-2" />
+
+                <label id="not-match-form" style="font-size: 10px; color: red; display: none; margin: 0;">
+                  Your password and confirmation password do not match
+                </label>
+                <div class="form-btn d-flex flex-column justify-content-center align-items-center mt-4">
+                    <input type="submit" value="Sign Up" />
+                    <a id="bk-to-lg" class="mt-3" href="#login-form">Back to login</a>
+                    <!-- <a class="mt-1" href="#login-form">Back to login</a> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- wrap all content in the page consist of header main content, footer-->
+    <div class="container mb-4">
+        <!-- content goes here -->
+        <!-- this part consists of logo, hotel's name login button, register button, navigation bar -->
+        <header class="row flex-nowrap no-gutters justify-content-between align-items-center" id="header">
+            <div class="logo col-sm-3">
+                <a href="./Home-page.html"><img class="img-fluid" src="../images/logos/logo_v1.png" alt="logo"></a>
+            </div>
+
+            <div class="hotel-name col-sm-6 text-center">
+                Sea Diamond hotel
+            </div>
+
+            <div id='login-btn' class="login text-right col-sm-3">
+                <a class="log-btn" href="#login-form">Sign In</a>
+            </div>
+        </header>
+
+        <!-- navigation bar -->
+        <div class="nav-bar mb-4" id="content">
+            <ul class="nav justify-content-center no-gutters pt-2 pb-2">
+                <li class="nav-item col-md-2 i-begin">
+                    <a class="nav-link" href="../pages/Home-page.html">Home</a>
+                </li>
+                <li class="nav-item col-md-2 i-normal">
+                    <a class="nav-link active" href="#">Our rooms</a>
+                </li>
+                <li class="nav-item col-md-2 i-normal">
+                    <a class="nav-link" href="../pages/Contact.html">Contact</a>
+                </li>
+                <li class="nav-item col-md-2 i-normal">
+                    <a class="nav-link" href="../pages/About-us.html">About us</a>
+                </li>
+                <!-- <li class="nav-item col-md-2 i-end">
+                    <a class="nav-link" href="../pages/ListRooms-page.html">Book now</a>
+                </li> -->
+            </ul>
+        </div>
+
+        <!-- content goes here -->
+        <div class="main-content">
+            <div id="table-month" class="row">
+                <div class="col-3">Jan</div>
+                <div class="col-3">Feb</div>
+                <div class="col-3">Mar</div>
+                <div class="col-3">Apr</div>
+                <div class="col-3">May</div>
+                <div class="col-3">Jun</div>
+                <div class="col-3">Jul</div>
+                <div class="col-3">Aug</div>
+                <div class="col-3">Sep</div>
+                <div class="col-3">Oct</div>
+                <div class="col-3">Nov</div>
+                <div class="col-3">Dec</div>
+            </div>
+            <div class="cover-image text-center">
+                ROOMS
+            </div>
+            <div class="booking-content row row-mg">
+                <div class="booking-frame col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="booking-item check-in">
+                        <div id="check-in-text">CHECK-IN</div>
+                        <div class="number" id="date-in"></div>
+                        <div class="month" id="month-in"></div>
+                        <i class="fas fa-caret-down button" onclick="downNumber(this)"></i>
+                    </div>
+                    <div class="booking-item check-out">
+                        <div id="check-out-text">CHECK-OUT</div>
+                        <div class="number" id="date-out"></div>
+                        <div class="month" id="month-out"></div>
+                        <i class="fas fa-caret-down button" onclick="downNumber(this)"></i>
+                    </div>
+                    <div class="booking-item guests">
+                        <div id="guests-text">GUESTS</div>
+                        <div class="number" id="count-guests">1</div>
+                        <i class="fas fa-caret-up button" onclick="upNumber(this)"></i>
+                        <i class="fas fa-caret-down button" onclick="downNumber(this)"></i>
+                    </div>
+                    <div class="booking-item nights">
+                        <div id="nights-text">NIGHTS</div>
+                        <div class="number" id="count-nights">1</div>
+                        <i class="fas fa-caret-up button" onclick="upNumber(this)"></i>
+                        <i class="fas fa-caret-down button" onclick="downNumber(this)"></i>
+                    </div>
+                </div>
+                <div class="list-rooms row row-mg col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <div class="room room1 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room1.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                    <div class="room room2 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room2.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                    <div class="room room3 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room3.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                    <div class="room room4 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room4.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                    <div class="room room5 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room5.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                    <div class="room room6 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room6.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                    <div class="room room7 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room7.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                    <div class="room room8 col-5">
+                        <img class="room-image" src="../images/listrooms-images/room8.jpg">
+                        <div class="info-room">
+                            <span class="btn-detail button" onclick="toRoomDetail()">Thông tin chi tiết</span>
+                            <img class="icon-account" src="../images/listrooms-images/account.png">
+                            <span class="count-person">20</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- this part consists of information of service provider,
+             social media links -->
+    <!-- footer -->
+    <footer id="p-footer" class="page-footer container-fluid d-flex flex-row justify-content-center align-items-center pt-4">
+        <div class="ft-container container row row-mg justify-content-center no-gutters">
+            <!-- Grid column -->
+            <div class="ft-item col-md-4 mb-4">
+                <h5>Main contact</h5>
+                <div class="if-content">
+                    <p>District 1, Ho Chi Minh city, VN</p>
+                    <p>info@seadiamond.com</p>
+                    <p>+84 1535 43526</p>
+                </div>
+
+            </div>
+
+            <!-- Grid column -->
+            <div class="ft-item col-md-4 mb-4">
+                <h5>Site links</h5>
+                <div class="if-content">
+                    <a href="#!">About us</a>
+                    <a href="#!">Our rooms</a>
+                </div>
+            </div>
+
+            <!-- Grid column -->
+            <div class="ft-item col-md-4 mb-4">
+                <h5>Social</h5>
+                <div class="if-content d-flex flex-column justify-content-center">
+                    <div class="icons d-flex flex-row justify-content-center">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="ml-4 mr-4 fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="../js/login-register/OnLoad.js"></script>
+    <script src="../js/login-register/OnRegister.js"></script>
+    <script src="../js/login-register/OnLogin.js"></script>
+    <script src="../js/ListRooms-page.js"></script>
+</body>
+
+</html>

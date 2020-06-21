@@ -1,0 +1,127 @@
+.cover-image {
+    height: 400px;
+    color: white;
+    line-height: 400px;
+    font-size: 50px;
+    background-image: url(../images/listrooms-images/room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.booking-content {
+    padding: 50px 0px 20px 0px;
+    margin: 0;
+}
+
+.booking-frame {
+    height: 15em;
+    background-color: #12263A;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.list-rooms {
+    padding: 0px 0px 0px 40px;
+    margin: 0;
+}
+
+.booking-item {
+    padding: 10px;
+    margin: 0;
+    color: aliceblue;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+}
+
+#check-in-text,
+#check-out-text,
+#guests-text,
+#nights-text {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    font-size: 25px;
+}
+
+.number {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    font-size: 40px;
+}
+
+.month,
+.fa-caret-up {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding-top: 10px;
+}
+
+.month {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa-caret-down {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding-bottom: 5px;
+}
+
+.room {
+    padding: 0;
+    margin: 0px 0px 30px 30px;
+    text-align: center;
+    border: none;
+}
+
+.room-image {
+    width: 100%;
+    height: 180px;
+}
+
+.btn-detail {
+    background-color: #12263A;
+    color: aliceblue;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.icon-account {
+    width: 18px;
+    height: 18px;
+}
+
+.count-person {
+    font-size: 14px;
+    color: #12263A;
+}
+
+.page-link {
+    font-size: 12px;
+    color: #12263A;
+}
+
+.button {
+    cursor: pointer;
+}
+
+#table-month {
+    background-color: white;
+    border: 1px solid gray;
+    color: #12263A;
+    position: relative;
+    top: 500px;
+    width: 300px;
+    z-index: 20;
+    text-align: center;
+}
+
+#table-month div:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
